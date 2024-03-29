@@ -8,6 +8,7 @@ export default function TicTacToe({ boardSize = 3 }) {
   const [playerOScore, setPlayerOScore] = useState(mountPlayerScore(boardSize));
   const [turn, setTurn] = useState("X");
   const [winner, setWinner] = useState(null);
+  
   function handleSquareClick(targetRowIndex, targetColIndex) {
     // Esta validación podría pasarse a una función para que sea más mantenible
     if (!!board[targetRowIndex][targetColIndex]) return;
