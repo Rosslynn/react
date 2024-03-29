@@ -26,9 +26,9 @@ function TicTacToe({ boardSize = 3 }) {
 
   return (
     <div className="container tic-tac-toe my-5">
-      <div className="tic-tac-toe__header row mb-4">
+      <div className="tic-tac-toe__header row mb-5">
         <div className="col">
-          <h2>Turno actual: {turn}</h2>
+          <h2>Turno del jugador {turn == 'X' ? '1' : '2'} con la letra {turn}</h2>
         </div>
       </div>
 
