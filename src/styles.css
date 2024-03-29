@@ -11,7 +11,7 @@ body {
   border-right: 0.5rem solid #ccc;
 }
 
-.tic-tac-toe__square {
+.square-button {
   all: unset;
   display: block;
   width: 100%;
@@ -19,8 +19,4 @@ body {
   text-align: center;
   font-size: 5rem;
   transition: all ease-in 5s;
-}
-
-.tic-tac-toe__square::before {
-  content: attr("data-preview");
 }
